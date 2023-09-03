@@ -5,8 +5,6 @@
 //estudiantes y muestra en la consola el promedio
 //de calificaciones de cada estudiante.
 
-MAL
-
 let clase = {
     estudiantes: [
         { nombre: "nombre1", calificaciones: [4,5,6] },
@@ -19,14 +17,13 @@ let clase = {
         };
         this.estudiantes.push(Estudiante);
     },
-    calcularPromedio: function(estudiante){
+    calcularPromedio: function(calificaciones){
         let sum = 0;
-        for(i=0;i<estudiante.calificaciones.lenght;i++){
-            sum += estudiante.calificaciones[i];
+        for (const nota of calificaciones) {
+            sum += nota;
         }
-        sum /= estudiante.calificaciones.lenght;
-        console.log("El promedio es de " + sum);
+        console.log("El promedio es de " + (sum/calificaciones.length));
     }
 }
 
-clase.calcularPromedio(clase.estudiante[1]);
+clase.calcularPromedio(clase.estudiantes[1].calificaciones);

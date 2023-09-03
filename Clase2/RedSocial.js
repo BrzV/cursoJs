@@ -11,7 +11,7 @@ let perfil = {
         { nombre: "Amigo1", edad: 21 },
         { nombre: "Amigo2", edad: 12 },
         { nombre: "Amigo3", edad: 17 }
-    ]
+    ],
 }
 
 let amigoJoven = perfil.amigos[0];
