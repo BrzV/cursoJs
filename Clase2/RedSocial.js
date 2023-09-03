@@ -15,10 +15,18 @@ let perfil = {
 }
 
 let amigoJoven = perfil.amigos[0];
+/*
 for(let i = 0 ; i < perfil.amigos.length ; i++){
     if (amigoJoven.edad > perfil.amigos[i].edad ){
         amigoJoven = perfil.amigos[i]
     }
 }
+*/
+for(const amigo of perfil.amigos){
+    if (amigoJoven.edad > amigo.edad ){
+        amigoJoven = amigo;
+    }
+}
+
 
 console.log("El amigo más joven es " + amigoJoven.nombre);
