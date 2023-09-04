@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <h2>Ingrese su nombre y edad:</h2>
+
+    <div id="alertas"></div>
+    
+    <form id="formularioEstudiantes">
+        <div>
+            <label for="nombre">Nombre del Estudiante:</label>
+            <input type="text" id="nombre" required>
+            <br></br>
+            <label for="calificaciones">Calificaciones (separadas por comas):</label>
+            <input type="text" id="calificaciones" required>
+            <br></br>
+        </div>
+    
+        <button type="button" id="agregarEstudiante">Agregar Estudiante</button>
+        <button type="button" id="calcularPromedios">Calcular Promedios</button>
+        <button type="reset" id="reiniciar">Reiniciar</button>
+    </form>
+
+    <div id="resultados"></div>
+    <script src="app.js"></script>
+</body>
+</html>
