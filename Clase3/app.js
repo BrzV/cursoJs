@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const reiniciarBtn = document.getElementById("reiniciar");
     reiniciarBtn.addEventListener("click", reiniciar);
 
+    function Estudiante(nombre,calificaciones){
+        this.nombre = nombre;
+        this.calificaciones = calificaciones;
+    }
+
     function agregarEstudiante() {
         // Obtener los datos ingresados por el usuario
         const nombre = document.getElementById("nombre").value;
@@ -31,10 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Crear objeto de estudiante y agregarlo al arreglo "estudiantes"
-        const estudiante = {
-            nombre: nombre,
-            calificaciones: calificaciones
-        };
+        const estudiante = new Estudiante(nombre,calificaciones);
         estudiantes.push(estudiante);
 
         // Limpiar los campos después de agregar un estudiante
